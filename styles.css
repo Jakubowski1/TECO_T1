@@ -47,7 +47,6 @@ h1 {
   color: #C9C9C9;
   border-width: 2px;
   border-style: solid;  /* Add this line */
-
   border-color: #C9C9C9;
   position: relative;
   z-index: 1;
@@ -135,23 +134,27 @@ h1 {
   color: #D90000;
   border-color: #D90000;
 }
-#start-btn, #play-again-btn{
+#start-btn, #play-again-btn {
   background: #26B6E3;
   border: none;
   color: white;
   padding: 10px 20px;
-  margin: auto;
-  font-size: 100px;
-  border-radius: 100%;
-  /* filter: drop-shadow(0 ,1 ,2rem rgb(61, 179, 218)); */
+  font-size: 5vw; /* Responsive font size */
+  border-radius: 50%; /* Ensure it remains a circle */
   filter: drop-shadow(2px 2px 20px #157896);
-
-  margin-top: 10px;
-  width: 600px;
-  height: 600px;
-  margin-top: 10px;
-  
+  align-content: center;
+  width: 40vw; /* Responsive width */
+  max-width: 600px;
+  max-height: 600px;
+  height: 40vw; /* Responsive height */
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
 .submit-btn {
   background: #26B6E3;
   border: none;
@@ -160,7 +163,8 @@ h1 {
   border-radius: 5px;
  
   margin-top: 10px;
-  width: 100px;
+  width: 200px;
+  height: 60px;
   font-size: 1em;
 }
 .submit-btn:hover{
@@ -175,20 +179,29 @@ h1 {
 }
 
 #score {
-  font-size: 100px;
+  font-size: 70px;
   margin-bottom: 100px;
+  margin-top: 50px;
   color: #26B6E3;
 }
 
 @media (max-width: 600px) {
-  .option, .submit-btn, #start-btn, #play-again-btn {
-      height: 50px;
-      font-size: 0.8em;
-      padding: 10px;
-      border-radius: 5px;
-  }
-
   .options {
       grid-template-columns: 1fr;
+  }
+}
+@media (max-height: 800px) {
+  #score {
+    color:white;
+  }
+}
+@media (max-width: 530px) {
+  #score {
+    font-size: 50px;
+  }
+}
+@media (max-width: 530px) {
+  #score {
+    color: white;
   }
 }
