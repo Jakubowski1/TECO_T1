@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <div id="progress-bar-container">
+        </div>
+        <button id="start-btn" onclick="startQuiz()">Start <br/> The Quiz</button>
+        <div id="quiz-container" style="display: none;">
+            <div id="ques" class="question"></div>
+            <div id="opt" class="options"></div>
+            <button id="btn" class="submit-btn" onclick="checkAns()">SUBMIT</button>
+        </div>
+        <div id="score" style="display: none;"></div>
+        <button id="play-again-btn" onclick="playAgain()" style="display: none;">Play Again</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
