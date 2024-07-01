@@ -86,29 +86,33 @@ function createProgressBar() {
     for (let i = 0; i < Questions.length; i++) {
         const progressStep = document.createElement('div');
         progressStep.classList.add('progress-step');
-        if (i === 0) progressStep.classList.add('active');
+        if (i === 0) progressStep.classList.add('highlighted');
         const stepNumber = document.createElement('div');
         stepNumber.classList.add('progress-step-number');
         stepNumber.innerText = i + 1;
         progressStep.appendChild(stepNumber);
         progressBarContainer.appendChild(progressStep);
     }
+ 
 
     const progressLine = document.createElement('div');
     progressLine.classList.add('progress-line');
     progressBarContainer.appendChild(progressLine);
 }
 
-function updateProgressBar() {
+function updateProgressBar(correct) {
 	disableBtn();
     const progressSteps = document.querySelectorAll('.progress-step');
     const progressLine = document.querySelector('.progress-line');
     progressSteps.forEach((step, index) => {
-        if (index <= currQuestion) {
-            step.classList.add('active');
-        } else {
-            step.classList.remove('active');
+        if (index == currQuestion) {
+            step.classList.add('highlighted');
+        }else if((index < currQuestion )) {
+            step.classList.add('wrongAns');
+        }else if((index < currQuestion && correct)) {
+            step.classList.add('goodAns');
         }
+
     });
 
     const activeSteps = document.querySelectorAll('.progress-step.active').length;
@@ -158,11 +162,11 @@ function loadScore() {
     playAgainBtn.style.display = 'block';
 }
 
-function nextQuestion() {
+function nextQuestion(correct) {
     if (currQuestion < Questions.length - 1) {
         currQuestion++;
         loadQues();
-        updateProgressBar();
+        updateProgressBar(correct);
     } else {
         document.getElementById('opt').style.display = 'none';
         document.getElementById('ques').style.display = 'none';
@@ -174,12 +178,15 @@ function nextQuestion() {
 function checkAns() {
     nextQuest = !nextQuest;
     const selectedAns = document.querySelector('.option.selected');
+    var correct;
     if (selectedAns) {
         if (selectedAns.innerText === Questions[currQuestion].correct_answer) {
             selectedAns.classList.add('correct');
+            correct = true;
             score++;
         } else {
             selectedAns.classList.add('wrong');
+            correct = false;
             document.querySelectorAll('.option').forEach(option => {
                 if (option.innerText === Questions[currQuestion].correct_answer) {
                     option.classList.add('correct');
@@ -188,7 +195,7 @@ function checkAns() {
         }
         submitButton.innerHTML = "NEXT";
         if(nextQuest === true){
-        nextQuestion();
+        nextQuestion(correct);
         submitButton.innerHTML = "SUBMIT";
 
         }

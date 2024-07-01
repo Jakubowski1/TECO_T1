@@ -53,8 +53,8 @@ h1 {
 }
 
 .progress-step.active {
-  border-style:none;    /* Add this line */
-
+  border-style:solid;
+  border-color: #157896;    /* Add this line */
   background: #26B6E3;
   filter: drop-shadow(2px 2px 20px #157896);
 
@@ -72,14 +72,22 @@ h1 {
 }
 
 .progress-line.active {
-  background: #ffffff;
-  
+  background: #62d4f7;
 }
+
 
 .progress-step-number {
-  color: #C9C9C9;
+  color: #cfcdcd;
 }
-
+.progress-step.highlighted {
+  background: #2724bb;
+}
+.progress-step.wrongAns {
+  background: #bb24ae;
+}
+.progress-step.goodAns {
+  background: #24bb3d;
+}
 .question {
   font-size: 1.2em;
   background-color: #26B6E3;
@@ -200,7 +208,7 @@ h1 {
     font-size: 50px;
   }
 }
-@media (max-width: 530px) {
+@media (max-width: 400px) {
   #score {
     color: white;
   }
