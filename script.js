@@ -1,53 +1,53 @@
 let Questions = [
     {
-        question: 'What is the most important rule in snorkelling?',
-        correct_answer: 'Never snorkel alone',
-        incorrect_answers: ['Snorkel only during high tide', 'Always wear flippers', 'Only use a full-face mask']
+        question: 'In which year was SoftTeco founded?',
+        correct_answer: '2008',
+        incorrect_answers: ['2010', '2012', '2014']
     },
     {
-        question: 'What should you do if you encounter a strong current while snorkelling?',
-        correct_answer: 'Swim parallel to the shore',
-        incorrect_answers: ['Swim directly against the current', 'Dive down to avoid the current', 'Float on your back']
+        question: 'Where is the headquarters of SoftTeco located?',
+        correct_answer: 'Kaunas, Lithuania',
+        incorrect_answers: ['Vilnius, Lithuania', 'Riga, Latvia', 'Tallinn, Estonia']
     },
     {
-        question: 'What is the purpose of a snorkel mask?',
-        correct_answer: 'To see clearly underwater',
-        incorrect_answers: ['To breathe underwater', 'To keep water out of your ears', 'To communicate with others']
+        question: 'Which certification does SoftTeco hold for quality management?',
+        correct_answer: 'ISO 9001',
+        incorrect_answers: ['ISO 14001', 'ISO 27001', 'ISO 45001']
     },
     {
-        question: 'How should you breathe when using a snorkel?',
-        correct_answer: 'Slowly and deeply through your mouth',
-        incorrect_answers: ['Quickly and shallowly through your nose', 'Quickly and deeply through your mouth', 'Slowly and deeply through your nose']
+        question: 'What percentage of SoftTeco employees have been with the company for more than three years?',
+        correct_answer: '78%',
+        incorrect_answers: ['50%', '60%', '70%']
     },
     {
-        question: 'What should you do if water enters your snorkel?',
-        correct_answer: 'Exhale forcefully to clear the snorkel',
-        incorrect_answers: ['Remove the snorkel and swim back to shore', 'Inhale to clear the snorkel', 'Tilt your head to let the water drain out']
+        question: 'Which of the following is NOT a service offered by SoftTeco?',
+        correct_answer: 'Cybersecurity Training',
+        incorrect_answers: ['Web Development', 'Mobile App Development', 'Machine Learning']
     },
     {
-        question: 'Which marine life should you avoid touching while snorkelling?',
-        correct_answer: 'All marine life',
-        incorrect_answers: ['Only jellyfish', 'Only coral', 'Only sea urchins']
+        question: 'What is the employee retention rate at SoftTeco?',
+        correct_answer: '90%',
+        incorrect_answers: ['75%', '80%', '85%']
     },
     {
-        question: 'What is the best time of day to go snorkelling?',
-        correct_answer: 'Morning',
-        incorrect_answers: ['Afternoon', 'Evening', 'Night']
+        question: 'Which engagement model does SoftTeco offer?',
+        correct_answer: 'Dedicated Team',
+        incorrect_answers: ['Freelance', 'Temporary Hire', 'Internship']
     },
     {
-        question: 'Why is it important to wear a brightly colored snorkel vest?',
-        correct_answer: 'To be easily seen by others',
-        incorrect_answers: ['To keep warm', 'To carry additional equipment', 'To avoid sunburn']
+        question: 'What is a core value at SoftTeco?',
+        correct_answer: 'Trust',
+        incorrect_answers: ['Competition', 'Individualism', 'Secrecy']
     },
     {
-        question: 'What is the recommended depth for beginner snorkelers?',
-        correct_answer: 'Shallow water, no deeper than 6 feet',
-        incorrect_answers: ['10 feet', '15 feet', '20 feet']
+        question: 'How many projects has SoftTeco successfully delivered?',
+        correct_answer: '450',
+        incorrect_answers: ['200', '300', '400']
     },
     {
-        question: 'What should you do if you get a leg cramp while snorkelling?',
-        correct_answer: 'Float on your back and stretch the muscle',
-        incorrect_answers: ['Keep swimming to work it out', 'Dive down to relieve the pressure', 'Call for help immediately']
+        question: 'Which technology is NOT listed as a competency at SoftTeco?',
+        correct_answer: 'Ruby on Rails',
+        incorrect_answers: ['Java', 'Python', 'Node.js']
     }
 ];
 
