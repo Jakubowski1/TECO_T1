@@ -107,12 +107,10 @@ function updateProgressBar(correct) {
     progressSteps.forEach((step, index) => {
         if (index == currQuestion) {
             step.classList.add('highlighted');
-        }else if((index < currQuestion )) {
-            step.classList.add('wrongAns');
-        }else if((index < currQuestion && correct)) {
-            step.classList.add('goodAns');
+        }else if(index < currQuestion) {
+            step.classList.add('doneAns');
         }
-
+            
     });
 
     const activeSteps = document.querySelectorAll('.progress-step.active').length;

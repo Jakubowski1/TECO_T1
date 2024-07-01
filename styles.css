@@ -67,6 +67,7 @@ h1 {
   left: 0;
   right: 0;
   height: 2px;
+
   background: #C9C9C9;
   z-index: 0;
 }
@@ -74,19 +75,14 @@ h1 {
 .progress-line.active {
   background: #62d4f7;
 }
-
-
 .progress-step-number {
   color: #cfcdcd;
 }
 .progress-step.highlighted {
   background: #2724bb;
 }
-.progress-step.wrongAns {
-  background: #bb24ae;
-}
-.progress-step.goodAns {
-  background: #24bb3d;
+.progress-step.doneAns {
+  background: #3fd0f5;
 }
 .question {
   font-size: 1.2em;
