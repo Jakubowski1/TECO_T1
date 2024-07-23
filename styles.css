@@ -6,7 +6,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  text-align: center; /* Center text within the body */
+  text-align: center; 
   cursor: default;
 }
 
@@ -45,21 +45,15 @@ h1 {
   justify-content: center;
   align-items: center;
   color: #C9C9C9;
-  border-width: 2px;
-  border-style: solid;  /* Add this line */
-  border-color: #C9C9C9;
+  border: 2px solid #c9c9c9;
   position: relative;
   z-index: 1;
 }
 
 .progress-step.active {
-  border-style:solid;
-  border-color: #157896;    /* Add this line */
+  border: solid #c9c9c9;
   background: #26B6E3;
-  filter: drop-shadow(2px 2px 20px #157896);
-
-  
-}
+  box-shadow: 0 0 40px #157896;}
 
 .progress-line {
   position: absolute;
@@ -67,7 +61,6 @@ h1 {
   left: 0;
   right: 0;
   height: 2px;
-
   background: #C9C9C9;
   z-index: 0;
 }
@@ -143,14 +136,14 @@ h1 {
   border: none;
   color: white;
   padding: 10px 20px;
-  font-size: 5vw; /* Responsive font size */
-  border-radius: 50%; /* Ensure it remains a circle */
-  filter: drop-shadow(2px 2px 20px #157896);
+  font-size: 5vw; 
+  border-radius: 50%;
+  box-shadow: 0 0 40px #157896;
   align-content: center;
-  width: 40vw; /* Responsive width */
+  width: 40vw;
   max-width: 600px;
   max-height: 600px;
-  height: 40vw; /* Responsive height */
+  height: 40vw; 
   margin: 0;
   position: absolute;
   top: 50%;
@@ -172,13 +165,13 @@ h1 {
   font-size: 1em;
 }
 .submit-btn:hover{
-  filter: drop-shadow(2px 2px 20px #157896);
+  box-shadow: 0 0 40px #157896;
 }
 
 .submit-btn:disabled {
   background: #C9C9C9;
   cursor: not-allowed;
-  filter: drop-shadow( 0 0 0  #ffffff);
+  box-shadow: 0 0 0 #ffffff;
 
 }
 
